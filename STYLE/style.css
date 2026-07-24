@@ -1,0 +1,114 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background: lightgray;
+    font-family: 'Lora', 'serif';
+}
+
+header 
+{
+    background: gray;
+    height: 66px;
+}
+
+header *
+{
+    color: whitesmoke;
+}
+
+header .logo
+{
+    float: left;
+    /* This iherits the height of the structure that it is in */
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text
+{
+    margin: 8px;
+    font-family: 'Candal', 'serif';
+}
+
+header .logo-text span
+{
+    color: black;
+}
+
+header ul
+{
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li
+{
+    float: left;
+    position: relative;
+}
+
+/* This is the dropdown list.  We can position child elements relative to the parent */
+header ul li ul
+{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    /*We are hiding the dropdown list*/
+    display: none;
+}
+
+/**/
+header ul li:hover ul
+{
+    display: block;
+}
+
+/* This is the list item that is inside the dropdown list */
+header ul li ul li
+{
+    width: 100%;
+}
+
+/*These are the links in the in the list items that are inside the dropdown*/
+header ul li ul li a
+{
+    padding: 10px;
+}
+
+header ul li ul li a.logout
+{
+    color: red;
+}
+
+header ul li ul li a:hover
+{
+    background: black;
+}
+
+header ul li a
+{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover
+{
+    background: black;
+    transition: 0.9s;
+}
+
+header .menu-toggle
+{
+    display: none;
+}
