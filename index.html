@@ -16,33 +16,36 @@
      <link rel="stylesheet" href="STYLE/style.css">
 
     <title>My Blog</title>
+
+    
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1 class="logo-text"><span>C</span>oding <span>W</span>ith <span>C</span>oach</h1>
+    
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Coding With Coach</a>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <!-- Font Awesome Bars-->
-        <i class="fa-solid fa-bars menu-toggle"></i>
+<!-- JQUERY -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <!-- <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Login</a></li> -->
-            <li>
-                <a href="#">
-                    <i class="fa fa-user"></i>
-                    Coach
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#" class="logout">Logout</a></li>
-                </ul>
-            </li>
-        </ul>
-    </header>
+
+ <!-- CUSTOM SCRIPT -->
+ <script src="JS/script.js" defer></script>
+
+
 </body>
 </html>
